@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "esbenp.prettier-vscode",
+        "ms-ceintl.vscode-language-pack-ja",
+        "mechatroner.rainbow-csv",
+        "oderwat.indent-rainbow",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "christian-kohler.path-intellisense",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "dbaeumer.vscode-eslint",
+        "jakebecker.elixir-ls"
+    ]
+}
