@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains scripts to set macOS for development.
+This repository contains scripts to set macOS.
 
 ## Install
 
