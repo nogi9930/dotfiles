@@ -4,12 +4,6 @@
 
 This repository contains scripts to set macOS for development.
 
-## Applications
-
-- [Homebrew](https://brew.sh/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [asdf](https://asdf-vm.com/)
-
 ## Install
 
 1. Download installation materials.
