@@ -9,6 +9,6 @@
     "github.copilot.chat.localeOverride": "ja",
     "makefile.configureOnOpen": true,
     "files.associations": {
-        ".Brewfile": "ruby",
-    },
+        ".Brewfile": "ruby"
+    }
 }
