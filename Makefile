@@ -1,6 +1,12 @@
 # Do everything.
 # defaults is not run by default.
-all: init link brew asdf
+all: init link brew asdf vscode
+
+# Set macOS system preferences.
+defaults:
+	@echo "\033[0;34m[Makefile] Run defaults.sh\033[0m"
+	@bin/defaults.sh | sed 's/^/[defaults.sh] /'
+	@echo "\033[0;34m[Makefile] Done.sh\033[0m"
 
 # Set initial preference.
 init:
@@ -26,8 +32,8 @@ asdf:
 	@bin/asdf.sh | sed 's/^/[asdf.sh] /'
 	@echo "\033[0;34m[Makefile] Done.sh\033[0m"
 
-# Set macOS system preferences.
-defaults:
-	@echo "\033[0;34m[Makefile] Run defaults.sh\033[0m"
-	@bin/defaults.sh | sed 's/^/[defaults.sh] /'
+# Install Visual Studio Code extensions.
+vscode:
+	@echo "\033[0;34m[Makefile] Run vscode.sh\033[0m"
+	@bin/vscode.sh | sed 's/^/[vscode.sh] /'
 	@echo "\033[0;34m[Makefile] Done.sh\033[0m"
