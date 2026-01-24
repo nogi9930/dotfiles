@@ -10,5 +10,9 @@
     "makefile.configureOnOpen": true,
     "files.associations": {
         ".Brewfile": "ruby"
+    },
+    "chat.agent.maxRequests": 200,
+    "chat.tools.terminal.autoApprove": {
+        "flutter": true
     }
 }
