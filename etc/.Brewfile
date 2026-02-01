@@ -8,6 +8,7 @@ brew "gawk"
 brew "gpg"
 brew "jq"
 brew "tree"
+brew "xz"
 
 # GUI Applications
 cask "visual-studio-code"
