@@ -15,6 +15,7 @@ cask "visual-studio-code"
 cask "google-chrome"
 cask "firefox"
 cask "microsoft-edge"
+cask "docker"
 
 # App Store Applications
 mas "Xcode", id: 497799835

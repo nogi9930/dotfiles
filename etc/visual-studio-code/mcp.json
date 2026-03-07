@@ -4,7 +4,12 @@
 			"command": "npx",
 			"args": [
 				"@playwright/mcp@latest"
-			]
+			],
+			"type": "stdio"
+		},
+		"figma": {
+			"url": "http://127.0.0.1:3845/mcp",
+			"type": "http"
 		}
 	},
 	"inputs": []
