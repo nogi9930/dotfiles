@@ -9,6 +9,8 @@ brew "gpg"
 brew "jq"
 brew "tree"
 brew "xz"
+brew "osmium-tool"
+brew "tippecanoe"
 
 # GUI Applications
 cask "visual-studio-code"

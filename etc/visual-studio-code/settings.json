@@ -22,5 +22,6 @@
     "chat.tools.urls.autoApprove": {
         "https://docs.widgetbook.io": true
     },
-    "chat.viewSessions.orientation": "stacked"
+    "chat.viewSessions.orientation": "stacked",
+    "git.autofetch": true
 }
