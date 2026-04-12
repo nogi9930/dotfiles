@@ -5,4 +5,5 @@ if [ "$(uname)" != "Darwin" ] ; then
 	exit 1
 fi
 
-brew bundle --global
+# Install Maestro
+curl -fsSL "https://get.maestro.mobile.dev" | zsh

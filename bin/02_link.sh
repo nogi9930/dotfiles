@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 if [ "$(uname)" != "Darwin" ] ; then
 	echo "Not macOS!"
@@ -36,3 +36,15 @@ echo "Linking for Visual Studio Code"
 ln -fnsv "${SCRIPT_ROOT_DIR}/etc/visual-studio-code/settings.json" "$HOME/Library/Application Support/Code/User"
 ln -fnsv "${SCRIPT_ROOT_DIR}/etc/visual-studio-code/mcp.json" "$HOME/Library/Application Support/Code/User"
 ln -fnsv "${SCRIPT_ROOT_DIR}/etc/visual-studio-code/extensions.json" "$HOME/.vscode"
+
+# For Java
+echo "Linking for Java"
+JAVA_JDK_SRC="$(brew --prefix)/opt/openjdk/libexec/openjdk.jdk"
+JAVA_JDK_DEST="/Library/Java/JavaVirtualMachines/openjdk.jdk"
+
+if ! ln -sfn "$JAVA_JDK_SRC" "$JAVA_JDK_DEST"; then
+	echo "Unable to create Java symlink at $JAVA_JDK_DEST."
+	echo "Creating a symlink in /Library/Java/JavaVirtualMachines requires elevated privileges."
+	echo "Run the following command manually:"
+	echo "  sudo ln -sfn \"$JAVA_JDK_SRC\" \"$JAVA_JDK_DEST\""
+fi

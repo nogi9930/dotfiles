@@ -1,6 +1,6 @@
 # Do everything.
 # defaults is not run by default.
-all: init link brew asdf vscode
+all: init link brew asdf vscode dmg
 
 # Set macOS system preferences.
 defaults:
@@ -36,4 +36,9 @@ asdf:
 vscode:
 	@echo "\033[0;34m[Makefile] Run 05_vscode.sh\033[0m"
 	@bin/05_vscode.sh | sed 's/^/[05_vscode.sh] /'
+	@echo "\033[0;34m[Makefile] Done.sh\033[0m"
+
+dmg:
+	@echo "\033[0;34m[Makefile] Run 06_dmg.sh\033[0m"
+	@bin/06_dmg.sh | sed 's/^/[06_dmg.sh] /'
 	@echo "\033[0;34m[Makefile] Done.sh\033[0m"

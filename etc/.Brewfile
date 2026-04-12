@@ -1,7 +1,7 @@
 cask_args appdir: "/Applications"
 
 # CLI Applications
-brew "docker"
+cask "docker-desktop"
 brew "git"
 brew "asdf"
 brew "gawk"
@@ -11,13 +11,13 @@ brew "tree"
 brew "xz"
 brew "osmium-tool"
 brew "tippecanoe"
+brew "java"
 
 # GUI Applications
 cask "visual-studio-code"
 cask "google-chrome"
 cask "firefox"
 cask "microsoft-edge"
-cask "docker"
 
 # App Store Applications
 mas "Xcode", id: 497799835
